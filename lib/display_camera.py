@@ -8,6 +8,7 @@ config_file = fileDB(config_dir+'/.config')
 
 cam = Camera(config_file)
 
-for i in range(100):
+for i in range(10):
     img = cam.get_camera_img()
     cam.display(img)
+    print("finished " + str(i))
